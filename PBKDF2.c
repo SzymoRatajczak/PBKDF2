@@ -11,7 +11,7 @@ int pbkdf2(unsigned char *pw,unsigned int pwlen,char *salt,unsigned long long sa
 {
 	
 	unsigned long l,r,i,j;
-	unsigned char txt[4],hash[HLEN*2],tmo[HLEN],*p=dk;
+	unsigned char txt[4],hash[HLEN*2],tmp[HLEN],*p=dk;
 	unsigned char *lhix,*hix,*swap;
 	short k;
 	int outlen;
